@@ -1,0 +1,130 @@
+.sidebar {
+    margin-top: 50px;
+    margin-left: 25px;
+    margin-right: 30px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    background-color: rgb(49, 101, 131);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: rgb(33, 50, 59);
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-right: 60px;
+}
+
+.member {
+    width: 45%;
+    background-color: #ffffffbb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.member img {
+    border-radius: 10px;
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.describe {
+    margin-left: 10px;
+    flex: 1;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+    .sidebar {
+        margin-top: 0px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+
+    .sidebar ul {
+        list-style-type: none;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .sidebar ul li {
+        margin-bottom: 3px;
+    }
+
+    .sidebar ul li a {
+        display: block;
+        background-color: rgb(49, 101, 131);
+        color: #ffffff;
+        text-decoration: none;
+        padding: 6px;
+        border-radius: 5px;
+    }
+
+    .sidebar ul li a:hover {
+        background-color: rgb(33, 50, 59);
+    }
+
+    .content {
+        flex: 1;
+        padding: 5px;
+        margin-top: 0px;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+        margin-right: 41px;
+    }
+
+    .member {
+        width: 100%;
+        background-color: #ffffffbb;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    .member img {
+        border-radius: 10px;
+        width: 100px;
+        height: auto;
+    }
+
+    .describe {
+        margin-left: 0; 
+        flex: 1;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,17 @@
+h1 {
+    color: white;
+}
+
+#link {
+    color: white;
+    text-decoration: none;
+}
+
+#link:hover {
+    color: #002574;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    
+}

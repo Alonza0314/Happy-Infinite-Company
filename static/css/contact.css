@@ -1,0 +1,48 @@
+.contact-info {
+    background-color: #ffffffbb;
+    width: 1000px;
+    height: 250px;
+    padding: 50px;
+    text-align: left;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+.contact-info a {
+    color: black;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    color: #3776ff;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .contact-info {
+        background-color: #ffffffbb;
+        width: auto;
+        height: auto;
+        max-width: 90%;
+        padding: 35px;
+        text-align: left;
+        margin-top: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 20px;
+    }
+
+    .contact-info h1{
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+    .contact-info h2 {
+        font-size: 14px;
+    }
+
+    .contact-info h2 a {
+        font-size: 14px;
+    }
+    
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>嗨心無限公司</title>
+
+    <link rel="stylesheet" href="../static/css/topbar.css">
+    <link rel="stylesheet" href="../static/css/login.css">
+</head>
+<body>
+    <div class="topbar">
+        <span class="extra-text">
+            <a href="/">Happy Infinite</a>
+        </span>
+        <div class="link">
+            <a href="/">首頁</a>
+            <a href="/about">關於公司</a>
+            <a href="/nothing">充個版面</a>
+            <a href="/contact">聯絡我們</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="form-box">
+                <!-- 註冊 -->
+                <form class="signup-box hidden" id="signup-form" action="{{.ActionURLSignup}}" method="post">
+                    <h1>signup</h1>
+                    <input type="text" id="username" placeholder="username" name="username">
+                    <input type="email" id="email" placeholder="email" name="email">
+                    <input type="password" id="password" placeholder="password" name="password">
+                    <input type="password" id="password-again" placeholder="password again" name="password-again">
+                    <input type="submit" value="確認註冊">
+                </form>
+                <!-- 登入 -->
+                <form class="login-box" id="login-form" action="{{.ActionURLLogin}}" method="post">
+                    <h1>login</h1>
+                    <input type="text" id="login-username" placeholder="username" name="username">
+                    <input type="password" id="login-password" placeholder="password" name="password">
+                    <a href="/login/findpw">忘記密碼？</a>
+                    <input type="submit" value="確認登入">
+                </form>
+            </div>
+            <div class="con-box left">
+                <h2>歡迎來到<span>Happy Infinite</span></h2>
+                <img src="../static/image/signup.webp" alt="">
+                <p>已有帳號！</p>
+                <button id="login">去登入</button>
+            </div>
+            <div class="con-box right">
+                <h2>歡迎來到<span>Happy Infinite</span></h2>
+                <img src="../static/image/login.webp" alt="">
+                <p>沒有帳號？</p>
+                <button id="signup">去註冊</button>
+            </div>
+        </div>
+    </div>
+    <script src="../static/js/login.js"></script>
+</body>
+</html>
