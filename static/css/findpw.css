@@ -3,7 +3,6 @@
 }
 
 .container {
-    position: relative;
     width: 650px;
     height: 400px;
     margin-top: 100px;
@@ -19,13 +18,17 @@
     width: 100%;
 }
 
-h1 {
+.dp {
     text-align: center;
     margin-top: 70px;
     margin-bottom: 20px;
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 5px;
+}
+
+.cell {
+    display: none;
 }
 
 input {
@@ -84,7 +87,12 @@ input:focus::placeholder {
     flex-direction: row;
 }
 
-.auth img {
+.captcha {
+    display: flex;
+    flex-direction: row;
+}
+
+.captcha img {
     width: 120px;
     height: 40px;
     margin-top: 5px;
@@ -92,7 +100,7 @@ input:focus::placeholder {
     margin-right: 10px;
 }
 
-.auth input[type='button'] {
+.captcha input[type='button'] {
     align-self: flex-end;
     margin-right: -30px;
     background-color: #f6f6f6;
@@ -103,28 +111,57 @@ input:focus::placeholder {
     border: none;
     cursor: pointer;
     font-weight: bold;
-    font-size: 14px;
-    height: 50%;
-    width: 20%;
+    font-size: 2vh;
+    /* height: 50%; */
+    width: 40%;
     text-align: center;
+    /* justify-content: center; */
     padding-right: 10px;
 }
 
-.auth input[type='button']:hover {
+.captcha input[type='button']:hover {
     background-color: rgb(0, 56, 112);
     color: white;
     transition: background-color 0.35s ease;
 }
 
 @media only screen and (max-width: 600px) {
+    .main {
+        align-items: center;
+    }
     .container {
-        position: relative;
-        width: 360px;
-        height: 400px;
-        margin: 100px auto;
-        margin-top: -80px;
-        background-color: #3062cfca;
-        border-radius: 20px;
-        box-shadow: 0px 0px 200px rgb(151, 199, 226);       
+        width: 80vw;
+        height: 60vh;
+        margin-top: -40%;
+    }
+
+    .dp {
+        display: none;
+    }
+
+    .cell {
+        display: unset;
+        text-align: center;
+        margin-top: 5vh;
+        margin-bottom: 2vh;
+        text-transform: uppercase;
+        color: #fff;
+        letter-spacing: 5px;
+    }
+
+    .auth {
+        flex-direction: column;
+    }
+
+    .auth input[type='text'] {
+        width: 110%;
+    }
+
+    .captcha img {
+        margin-left: -1%;
+    }
+
+    .captcha input[type='button'] {
+        font-size: 3vw;
     }
 }
